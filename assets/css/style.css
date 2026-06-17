@@ -249,18 +249,14 @@ img {
     overflow: hidden;
 }
 
-.hero::before {
-
-    content: "";
-
+/* Video Background */
+.hero-video {
     position: absolute;
     inset: 0;
-
-    background:
-        url("../images/hero/hero-bg.png")
-        center center/cover;
-
-    opacity: .12;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .hero-wrapper {
@@ -346,6 +342,7 @@ img {
 
     display: flex;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .btn-primary {
